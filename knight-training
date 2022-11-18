@@ -89,6 +89,9 @@ class Hero:
         self.health = 100
         self.attack = 50
 
+    # FIXTHIS - could have functions for healing, agility, defense, etc
+    # that depend on race and class, and are used for encounters
+
 hero = None
 
 def create_hero():
