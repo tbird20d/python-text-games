@@ -10,7 +10,7 @@ Created on Sat Dec 23 23:57:38 2017
 """
 import time
 
-race_names = {1: "Human", 2: "Elf", 3: "Orc"}
+race_names = {1: "Human", 2: "Elf", 3: "Orc", 4: "Wolf man"}
 class_names = {1: "Warrior", 2: "Mage", 3: "Healer"}
 
 # room is the key for dungeon_rooms, room_descriptions and level_complete
@@ -102,7 +102,7 @@ def create_hero():
     hero_name = input("My name is: ")
 
     print("Choose a race")
-    print("1- Human\t\t2- Elf\t\t3- Orc")
+    print("1- Human\t\t2- Elf\t\t3- Orc\t\t4- Wolf man")
     race_choice = int(input("My race is: "))
 
     print("Choose a class.")
