@@ -101,15 +101,20 @@ def create_hero():
     hero_name = input("My name is: ")
 
     print("Choose a race")
-    
     # print("1- Human\t\t2- Elf\t\t3- Orc")
     races = ""
     for key in race_names:
         if races != "":
             races += "\t\t"
         races += str(key) + "- " + race_names[key]
+    
     print(races)
-    race_choice = int(input("My race is: "))
+    while True:
+        try:
+            race_choice = int(input("My race is: "))
+            break
+        except ValueError:
+            print("no")
 
     print("Choose a class.")
     print("1- Warrior\t\t2- Mage\t\t3- Healer")
