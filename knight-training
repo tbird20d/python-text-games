@@ -25,6 +25,7 @@ dungeon_rooms = {
 
 room_descriptions = {
   1: """You are standing in the knight's training chambers.
+On the walls is a picture of the King!
 In front of you lies your master-at-arms.""",
 
   2: """You enter the room. You can barely make out anything
