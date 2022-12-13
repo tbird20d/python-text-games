@@ -224,41 +224,43 @@ def main():
 
     while 1:
         print("1- New Game\n2- Load Game\n3- Exit")
-        start_choice = int(input())
-
-        if start_choice == 3:
-            print("See you next time...")
-            break
-
-        if start_choice == 1:
-            create_hero()
-            room = 1
-            while room < 5:
-                encounter()
-                if hero.health <= 0:
-                    print("Better luck next time!")
-                    return
-                if get_input() == "exit":
-                    break
-            print("To be continued.")
-            break
-
-        elif start_choice == 2:
-            # if there is no save file, load_game returns None
-            load_game()
-            if not hero:
-                continue
-            while room < 5:
-                if get_input() == "exit":
-                    break
-                encounter()
-                if hero.health <= 0:
-                    print("Better luck next time!")
-                    return
-            print("To be continued.")
-            break
-
-        else:
+        try:
+            start_choice = int(input())
+            if start_choice == 3:
+                print("See you next time...")
+                break
+    
+            if start_choice == 1:
+                create_hero()
+                room = 1
+                while room < 5:
+                    encounter()
+                    if hero.health <= 0:
+                        print("Better luck next time!")
+                        return
+                    if get_input() == "exit":
+                        break
+                print("To be continued.")
+                break
+    
+            elif start_choice == 2:
+                # if there is no save file, load_game returns None
+                load_game()
+                if not hero:
+                    continue
+                while room < 5:
+                    if get_input() == "exit":
+                        break
+                    encounter()
+                    if hero.health <= 0:
+                        print("Better luck next time!")
+                        return
+                print("To be continued.")
+                break
+    
+            else:
+                print("Please enter 1, 2, or 3")
+        except ValueError:
             print("Please enter 1, 2, or 3")
 
 if __name__ == "__main__":
