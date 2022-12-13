@@ -217,8 +217,12 @@ def main():
     global room
 
     while 1:
-        print("1- New Game\n2- Load Game\n3- Exit")
-        start_choice = int(input())
+        try:
+            print("1- New Game\n2- Load Game\n3- Exit")
+            start_choice = int(input())
+        except ValueError:
+            print ("error: Only integer accepted.")
+            continue
 
         if start_choice == 3:
             print("See you next time...")
