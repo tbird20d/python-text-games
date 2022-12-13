@@ -18,7 +18,7 @@ room = None
 
 dungeon_rooms = {
   1: "Training Room",
-  2: "Slime Room",
+  2: "Metal Slime Room",
   3: "Chimera Room",
   4: "Demon Room"
 }
@@ -28,11 +28,11 @@ room_descriptions = {
 In front of you lies your master-at-arms.""",
 
   2: """You enter the room. You can barely make out anything
-from this dark area. However, you see a glowing blue light
+from this dark area. However, you see a glowing silver light
 straight ahead of you.
 
 The light burns greater... it begins to make the shape of a
-creature... a slime!""",
+creature... a metal slime!""",
 
   3: """As you proceed into the room, you hear eerie noises from
 all across the room, followed by a dark shape that moves too fast
