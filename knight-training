@@ -86,8 +86,37 @@ class Hero:
         self.race = race
         self.class_int = class_int
         # FIXTHIS - should make health and attack depend on race and class
-        self.health = 100
-        self.attack = 50
+        # race parameter
+        
+        if race == 1:
+            health_param = 0
+            attack_param = 0
+        elif race == 2:
+            health_param = 5
+            attack_param = -5
+        elif race == 3:
+            health_param = -10
+            attack_param = 10
+        else:
+            # FIXTHIS - error handling
+            pass
+            
+
+        if class_int == 1:
+            health_param += 0
+            attack_param += 0
+        elif class_int == 2:
+            health_param += 10
+            attack_param += -10
+        elif class_int == 3:
+            health_param += -5
+            attack_param += 5
+        else:
+            # FIXTHIS - error handling
+            pass
+        
+        self.health = 100 + health_param
+        self.attack = 50 + attack_param
 
     # FIXTHIS - could have functions for healing, agility, defense, etc
     # that depend on race and class, and are used for encounters
