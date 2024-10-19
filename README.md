@@ -1,3 +1,5 @@
 This is a simple python text game.
 
-[Should put some more description here!!]
+Introduction
+------------
+This game allows you to fight monsters in a dungeon
