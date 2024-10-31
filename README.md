@@ -1,3 +1,4 @@
 This is a simple python text game.
 
-[Should put some more description here!!]
+This game is text RPG.
+You can enter your name battle Monsters.
