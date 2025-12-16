@@ -1,3 +1,7 @@
 This is a simple python text game.
 
+Introduction
+==============
+This fast-paced game, is super fun!
+
 [Should put some more description here!!]
